@@ -1,13 +1,14 @@
 sudo: required
-language:
-  node_js
-
+language: node_js
 node_js:
-  - 13
-
+- 13
 deploy:
   provider: heroku
-  api_key :
-    secure : $HEROKU_TOKEN
+  api_key:
+    secure: "$HEROKU_TOKEN"
   app:
     master: ancient-headland-32576
+env:
+  global:
+    secure: "ZIoF8hL0Z1W3yXwf9wF4vR5weZbocGiS1Ob7jsGIPQoaoeD+LR304HJOBddVRGZvALmZJsSwaRcc0HNjg9QgqXZ5KG1tDs+ArLThTPDF1vxI1Vq1s80D6N488ywPf0VJorhBIFNha7wLq77zJS2r4vGlegts44GB3mpCk3ujnf6gWwnZwxPhuxvgqjaY03TnSp5D+mFrrSTwjgh3PzMcHL/FC85fP1HJLZdpxb0dndXIEuFHNdRYUhPmXiGfYw0QU9aCTKyFFevELMNDvYMj0k8c8qBbDuUTRJwzc8oTNesMPD/d6xNGUtjL8VBYsxjmNow9vJ2uGyIqUB5Z405/p8d1TO3zYMExzDRA6YA/qNZEoC7OqvrpuykrcDkHsbiSD/ta5GBHyWknARZMKheASs+/7hBTIymQzBT0kg+Fm7mq7meW9JO6McfVuNmM/Jit1hVwYs9meHSK7+G6HF9EmvXbJJ89hTfo3hHqlBUXc5O9Kh4E06Ngm7/0nZq5JtGdqCDywIq5lt4H+gZRC1qgn7Ck/+8vok83LqvNfxeUf46vkzKOg96Twg/avyeMq/T2UQcAc9RdRq6eWH9Pea3tGGEdZMQes1d9TiBCN9CoJhwubw9gQHaoDmuSTdZUSFhUqQB5Z9XGlr5oVPn6M2ut4Wqm2g/h3fFpxb3HLLOv8As="
+    
